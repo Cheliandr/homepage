@@ -3,174 +3,138 @@
   <head>
     <meta charset="UTF-8" />
     <title>Résumé</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
-
-    <!-- Primary content template -->
-
     <main>
-      <div class="resume">
-        <div class="container">
-          <div class="resume__block">
-            <h1 class="contact-info__header">Vova Parkhomchuk</h1>
-            <h3 class="contact-info__sub-header">Software Engineer</h3>
-    
-            <div class="contact_info_container fh">
-
-              <!-- Contact info items example (should be place inside the contact-info__block) -->
-              <div class="contact-info__block">
-                <a href="" rel="author" class="contact-info__item">
-                  <div class="contact-info__item-icon-wrapper">
-                    <svg class="contact-info__item-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                      <path
-                        d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z">
-                      </path>
-                    </svg>
-                  </div>
-                  <span>Kyiv, Ukraine</span>
-                </a>
-              </div>
-            
-              <div class="contact-info__block contact-info__block--center">
-                <img class="contact-info__avatar" src="assets/avatar.jpg" alt="Avatar">
-              </div>
-    
-              <!-- Contact info items example (should be place inside the contact-info__block) -->
-              <div class="contact-info__block">
-                <a href="https://www.instagram.com/vova_parkhomchuk/" rel="author" class="contact-info__item">
-                  <div class="contact-info__item-icon-wrapper">
-                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" class="svg-inline--fa fa-instagram fa-w-14" role="img" viewBox="0 0 448 512">
-                      <path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
-                  </div>
-                  <span>@vova_parkhomchuk</span>
-                </a>
-                <a href="mailto:vovaparkhomchuk@gmail.com" rel="author" class="contact-info__item">
-                  <div class="contact-info__item-icon-wrapper">
-                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope" class="svg-inline--fa fa-envelope fa-w-16" role="img" viewBox="0 0 512 512"><path fill="currentColor" d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"/></svg>
-                  </div>
-                  <span>vovaparkhomchuk@gmail.com</span>
-                </a>
-                <a href="tel:+380955708250" rel="author" class="contact-info__item">
-                  <div class="contact-info__item-icon-wrapper">
-                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="phone" class="svg-inline--fa fa-phone fa-w-16" role="img" viewBox="0 0 512 512"><path fill="currentColor" d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"/></svg>
-                  </div>
-                  <span>095-570-82-50</span>
-                </a>
-              </div>
-
-
-            </div>
-          </div>
-        </div>
-
-        <!-- Intro block (should be put below the previous container) -->
-
-        <div class="container">
-          <div class="resume__block">
-            <div class="intro">
-              <div class="intro__icon-wrapper">
-                <svg class="intro__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                  <path
-                    d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z">
-                  </path>
-                </svg>
-              </div>
-              <p class="intro_text">
-                Мене звати Вова.
-                Основною сферою моєї діяльності є алготрейдинг - я пишу торгових ботів. Також займаюся веб-розробкою та пишу мобільні додатки.
-                В академії я хочу навчитися створювати чисту архітектуру дотатків та прокачати скіли командної роботи. 
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Skills block -->
-        <div class="container">
-          <div class="resume__block">
-            <div class="skills">
-              <h3 class="skills__header">Skills</h3>
-              <p class="skills__text">JavaScript ES6, React Js, Redux, React Native, Typescript, Firebase, Node Js, C#.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Experience block template -->
-        <div class="container">
-          <div class="resume__block">
-            <div class="main-info fh">
-        
-              <!-- Experiences -->
-              <div class="experiences">
-                <h3 class="experiences__header">Experience</h3>
-                <div class="experiences__company">
-                  <!-- <div class="experiences__company-header">
-                    <span class="experiences__company-header-durability">For whole my life</span>
-                    <h3 class="experiences__company-header-name">BinaryStudio</h3>
-                  </div> -->
+        <div class="resume">
+          <div class="container">
+            <div class="resume__block">
+              <h1 class="contact-info__header">Liubov Kuchmuk</h1>
+              <h3 class="contact-info__sub-header">Manual QC/QA Engineer</h3>
+      
+              <div class="contact_info_container fh">
+                <div class="contact-info__block">
+                    <a href="" rel="author" class="contact-info__item">
+                    <div class="contact-info__item-icon-wrapper">
+                      <svg class="contact-info__item-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                        <path
+                          d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z">
+                        </path>
+                      </svg>
+                    </div>
+                    <span>Lviv, Ukraine</span>
+                  </a>
+                  <a href="https://www.linkedin.com/in/liubov-kuchmuk-32702b173/" rel="author" class="contact-info__item">
+                    <div class="contact-info__item-icon-wrapper">
+                      <svg class="contact-info__item-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path
+                          d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z">
+                        </path>
+                      </svg>
+                    </div>
+                    <span>Linkedin Profile</span>
+                  </a>
+                </div>
               
-                  <div class="experiences__company-project">
-                    <!-- <span class="experiences__company-project-role">Binary Studio Cat</span> -->
-                    <h3 class="experiences__company-project-name">My life expirience</h3>
-                    <ul class="experiences__company-project-responsibilities">
-                      <li>Закінчив найкращий ліцей “Наукова зміна” (2015)</li>
-                      <li>Вступив у КПІ ім. Ігоря Сікорського за спеціальністью “Прикладна математика” (2015)</li>
-                      <li>Перша робота - розробник та дизайнер у стартапі. Мобільний додаток для знайомств. (2017).</li>
-                      <li>Випускаємо з музикальним гуртом альбом (2017).</li>
-                      <li>Починаємо з колегами зі стартапу створювати торгових ботів для крипторинків. (2018)</li>
-                      <li>Подорож до Нового Світу - Нью-Йорк. (2019)</li>
-                      <li>Перекваліфіковуюсь в розробника торгових ботів на фондових ринках. (2020)</li>
-                    </ul>
+                <div class="contact-info__block contact-info__block--center">
+                  <img class="contact-info__avatar" src="IMG/Last.jpg" alt="Avatar">
+                </div>
+      
+                <div class="contact-info__block">
+                     +380638450186
+                    <span> liubov_kuchmuk@ukr.net </span>
+                </div>
+                
+              </div>
+              
+            </div>
+            <div class="container">
+                <div class="resume__block">
+                  <div class="intro">
+                    <div class="intro__icon-wrapper">
+                      <svg class="intro__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path
+                          d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z">
+                        </path>
+                      </svg>
+                    </div>
+                    <p class="intro_text">
+                        I have experience in statistics, database analysis, conducting projects with foreign clients/colleagues and preparing financial reports.
+                        Currently, I am gathering experience in software testing and continue studying. I have good theoretical knowledge that has already helped me to take part in software testing courses to gain practical skills. I am looking forward to future challenges in this field.
+                        
+                    </p>
                   </div>
                 </div>
               </div>
-        
-              <!-- Additional info -->
-              <div class="additional-info fv">
-                <div class="additional-info__education">
-                  <h3 class="additional-info__education-header">Education</h3>
-                  <div class="additional-info__education-university">
-                    <span class="additional-info__education-university-durability">2022</span>
-                    <h3 class="additional-info__education-university-speciality">KPI</h3>
+              <div class="container">
+                <div class="resume__block">
+                  <div class="skills">
+                    <h3 class="skills__header">Skills</h3>
+                    <p class="skills__text">Trello, SQL, TestRail, Jira, 1C-accounting, SAP, familiar with HTML/CSS </p>
                   </div>
                 </div>
+              </div>
+              <div class="container">
+                <div class="resume__block">
+                  <div class="main-info fh">
               
-                <div class="additional-info__languages">
-                  <h3 class="additional-info__languages-header">Languages</h3>
-                  <p class="additional-info__languages-item">
-                    Ukrainian
-                  </p>
-                  <p class="additional-info__languages-item">
-                    Russian
-                  </p>
-                  <p class="additional-info__languages-item">
-                    English B2
-                  </p>
+                    <div class="experiences">
+                        <div class="experiences">
+                            <h3 class="experiences__header">Experience</h3>
+                            <div class="experiences__company">
+                              <div class="experiences__company-header">
+                                <span class="experiences__company-header-durability">2016- present</span>
+                                <h3 class="experiences__company-header-name">Nestle Business Service</h3>
+                              </div>
+                          
+                              <div class="experiences__company-project">
+                                <span class="experiences__company-project-role">Accountant</span>
+                                <h3 class="experiences__company-project-name">Responsibilities</h3>
+                                <ul class="experiences__company-project-responsibilities">
+                                  <li>Performer and tester in automation processes of the final automation product</li>
+                                  <li>Manage communication with and support users and developers within global automation process</li>
+                                  <li>Analyze database information for the preparation of monthly and quarterly reports</li>
+                                  <li>Part of team involved with reporting transition process with Israel market</li>
+                                  <li>Calculate cost of goods sold for Russia market</li>
+                                  
+
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+              
+                    <div class="additional-info fv">
+                        <div class="additional-info fv">
+                            <div class="additional-info__education">
+                              <h3 class="additional-info__education-header">Education</h3>
+                              <div class="additional-info__education-university">
+                                <span class="additional-info__education-university-durability">2004-2009</span>
+                                <h3 class="additional-info__education-university-speciality">Lviv National University of I.Franko </h3>
+                                <p class="additional-info__education-university-name">Magister</p>
+                              </div>
+                            </div>
+                          
+                            <div class="additional-info__languages">
+                              <h3 class="additional-info__languages-header">Languages</h3>
+                              <p class="additional-info__languages-item">
+                                English B1 level
+                              </p>
+                              <p class="additional-info__languages-item">
+                                Russian fluently
+                              </p>
+                              
+                            </div>
+                          </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-
               
-            </div>
           </div>
         </div>
-
-        <div class="container">
-          <div class="resume__block">
-            <div class="skills">
-              <h3 class="skills__header">Additional info</h3>
-              <p class="skills__text">Моє найголовніше хоббі у житті - це створення музики. 
-                Я займаюся цим з 10 років. Граю на гітарі, барабанах та трошки на клавішних. </p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </main>
-
-    
-
-    
-
+      </main>
   </body>
 </html>
